@@ -202,7 +202,7 @@
 <dd><p>Class to collect resolved variables and manage their dependencies</p>
 <dl class="method">
 <dt id="pyartifacts.KnowledgeBase.get_value">
-<code class="descname">get_value</code><span class="sig-paren">(</span><em>key: str, resolve_callback: Callable[[ArtifactSource], Iterable[str]]</em><span class="sig-paren">)</span> &#x2192; Iterable[str]<a class="headerlink" href="#pyartifacts.KnowledgeBase.get_value" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_value</code><span class="sig-paren">(</span><em>key: str, resolve_callback: Callable[ArtifactSource, Iterable[str]]</em><span class="sig-paren">)</span> &#x2192; Iterable[str]<a class="headerlink" href="#pyartifacts.KnowledgeBase.get_value" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
 <div><p>Retrieve a value for a variable. In case the value is not yet available,
 this will trigger  evaluation of the variable.
