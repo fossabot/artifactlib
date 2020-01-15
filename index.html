@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to pyartifacts’s documentation! &mdash; pyartifacts 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="contents.html" class="icon icon-home"> pyartifacts
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to pyartifacts’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">pyartifacts</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html">Docs</a> &raquo;</li>
+        
+      <li>Welcome to pyartifacts’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyartifacts">
+<span id="welcome-to-pyartifacts-s-documentation"></span><h1>Welcome to pyartifacts’s documentation!<a class="headerlink" href="#module-pyartifacts" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyartifacts.ArtifactSource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactSource</code><span class="sig-paren">(</span><em>source_type: str</em>, <em>provides: List[pyartifacts.artifact.SourceProvide] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract base class for artifact source definitions</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactDefinition">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactDefinition</code><span class="sig-paren">(</span><em>name: str, sources: List[pyartifacts.artifact.ArtifactSource], labels: List[str] = None, supported_os: List[str] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for artifacts</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactGroupSource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactGroupSource</code><span class="sig-paren">(</span><em>names: List[str]</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactGroupSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>ARTIFACT_GROUP</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactCommandSource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactCommandSource</code><span class="sig-paren">(</span><em>cmd: str</em>, <em>args: List[str] = None</em>, <em>provides: List[pyartifacts.artifact.SourceProvide] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactCommandSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>COMMAND</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactRegistryValueSource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactRegistryValueSource</code><span class="sig-paren">(</span><em>key_value_pairs: List[Dict[str, str]], provides: List[pyartifacts.artifact.SourceProvide] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactRegistryValueSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>REGISTRY_VALUE</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactWMISource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactWMISource</code><span class="sig-paren">(</span><em>query: str</em>, <em>base_object: str = None</em>, <em>provides: List[pyartifacts.artifact.SourceProvide] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactWMISource" title="Permalink to this definition">¶</a></dt>
+<dd><p>WMI</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactFilesystemSource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactFilesystemSource</code><span class="sig-paren">(</span><em>source_type: str, paths: List[str], separator: str = None, provides: List[pyartifacts.artifact.SourceProvide] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactFilesystemSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>DIRECTORY, FILE and PATH</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.ArtifactRegistryKeySource">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">ArtifactRegistryKeySource</code><span class="sig-paren">(</span><em>keys: List[str], provides: List[pyartifacts.artifact.SourceProvide] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.ArtifactRegistryKeySource" title="Permalink to this definition">¶</a></dt>
+<dd><p>REGISTRY_KEY</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pyartifacts.KnowledgeBase">
+<em class="property">class </em><code class="descclassname">pyartifacts.</code><code class="descname">KnowledgeBase</code><span class="sig-paren">(</span><em>artifacts: Dict[str, ArtifactDefinition]</em><span class="sig-paren">)</span><a class="headerlink" href="#pyartifacts.KnowledgeBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to collect resolved variables and manage their dependencies</p>
+<dl class="method">
+<dt id="pyartifacts.KnowledgeBase.get_value">
+<code class="descname">get_value</code><span class="sig-paren">(</span><em>key: str, resolve_callback: Callable[[ArtifactSource], Iterable[str]]</em><span class="sig-paren">)</span> &#x2192; Iterable[str]<a class="headerlink" href="#pyartifacts.KnowledgeBase.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Retrieve a value for a variable. In case the value is not yet available,
+this will trigger  evaluation of the variable.
+To facilitate this, a callback must be provided that can be used to resolve
+another ArtifactSource to (text) values. The text value is expected to be</p>
+<blockquote>
+<div><ul class="simple">
+<li>For REGISTRY_KEY, the key path(s)</li>
+<li>For REGISTRY_VALUE, the string representation of the value(s) indicated</li>
+<li>For PATH and DIRECTORY, the file system path(s)</li>
+<li>For FILE, the content of the file(s) in one ‘</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<dl class="docutils">
+<dt>‘-separated string per source</dt>
+<dd>In any case, the value(s) will be cached for further use before returning to the caller.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 Siemens AG
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
